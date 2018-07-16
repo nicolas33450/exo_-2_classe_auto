@@ -49,15 +49,7 @@ afficher()
   
   
   ford.afficher()
-     
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
+     	  
 	 
 debut
 	si demarrer = false alors
