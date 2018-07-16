@@ -1,0 +1,80 @@
+exercice 2
+----------
+
+classe voiture
+ 
+   matricule : entier;
+   modele : string;
+   année : entier;
+   prix : réel;
+   
+****** variables ******   
+accelerer = false
+demarrer = false
+
+******* methode *******
+afficher()
+
+
+
+***********************
+
+
+ debut pgm
+ 
+ ford = voiture.matricule
+ ford = voiture.modele
+ ford = voiture.année
+ ford = voiture.prix 
+ 
+ peugeot = voiture.matricule
+ peugeot = voiture.modele
+ peugeot = voiture.année
+ peugeot = voiture.prix
+ 
+ mercedes = voiture.matricule
+ mercedes = voiture.modele
+ mercedes = voiture.année
+ mercedes = voiture.prix
+ 
+ ferrari = voiture.matricule
+ ferrari = voiture.modele
+ ferrari = voiture.année
+ ferrari = voiture.prix
+ 
+ fiat = voiture.matricule
+ fiat = voiture.modele
+ fiat = voiture.année
+ fiat = voiture.prix
+  
+  
+  ford.afficher()
+     
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+debut
+	si demarrer = false alors
+		Ecrire " le vehicule est démarré"
+		demarrer <-- true
+	fin si
+	retourner demarrer
+fin méthode
+
+oleen)
+debut
+	si demarrer = true alors
+		Ecrire " le vehicule accélère"
+		accelerer <-- true
+	fin si
+	sinon
+		accelerer <-- false
+	fin sinon
+	retourner accelerer
+fin méthode
