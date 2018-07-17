@@ -1,0 +1,82 @@
+classe Lampe          
+			 
+debut
+    nom : string
+	allumé : booleen
+	ampoule : Ampoule
+fin
+---------------------
+classe Ampoule
+debut
+    allumé : booleen
+	couleur : string
+fin
+--------------------
+**** methodes ****
+
+allumer()
+debut
+   allumé = true
+   ampoule.allumer()
+fin
+-------------------
+éteindreteindre()
+debut
+   allumé = false
+fin   
+------------------
+changer(nouvelleampoule)
+debut
+   si (allumé = false) ou (éteindre = true) alors   
+   ampoule <-- nouvelleampoule
+fin
+------------------  
+changerCouleur(nouvellecouleur)
+debut
+    si allumé = false alors
+	    couleur <-- nouvellecouleur
+	fin si
+fin
+-----------------
+debut pgm
+     
+	 lampe1 : Lampe
+	 ampoule2 : Ampoule
+
+     lampe1.allumer()
+	 lampe1.éteindre()
+	 ampoule2.changerCouleur("rouge")
+	 lampe1.changer(ampoule2)	 
+	 lampe1.allumer()
+	 
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

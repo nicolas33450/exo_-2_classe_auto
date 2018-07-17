@@ -1,0 +1,126 @@
+debut programme
+
+mot[] = tableau de caractere
+
+palindrome = false 
+x = 0
+k = mot.length
+
+veuillez 'entrez un mot'
+lire mot
+
+    tant que (mot[x] < mot [k]) et (palindrome = true)
+
+           si mot[x] = mot [k] alors 
+        
+                x ++
+                k --
+		 
+          fin si
+	
+	      sinon 
+	            palindrome = false
+			
+          fin sinon			
+    
+   fin tant que
+
+si (palindrome = true) et (mot[k] > 0) alors
+
+   ecrire  " le mot est un palindrome "
+
+ sinon 
+ 
+    ecrire " le mot n'est pas un palindrome "  
+
+
+ fin programme
+ 
+--------------------------------------------------------------------
+ debut pgm
+ 
+ pour i = 0 a 4; i++
+ 
+        pour j = 0 a 4; j ++ 
+
+           si i >= j alors
+
+               ecrire 1 + j
+			   
+           fin si			   
+	 	
+	    fin pour      
+	   	     
+ 	
+fin pour	
+
+fin pgm
+--------------------------------------------------------------------
+
+debut pgm 
+
+
+tabpizza[4][2] : string;
+
+tabpizza[0][0] : '4 fromages'
+tabpizza[0][1] : '4'
+
+tabpizza[1][0] : 'royale'
+tabpizza[1][1] : '3'
+
+tabpizza[2][0] : 'chorizo'
+tabpizza[2][1] : '5'
+
+tabpizza[3][0] : 'kebab'
+tabpizza[3][1] : '9'
+
+
+pour  i = 0 a 3, i++
+	
+	         ecrire tabpizza[i][0] + "-" + tabpizza[i][1];
+fin pour
+	
+	
+-----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

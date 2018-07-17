@@ -1,7 +1,7 @@
 exercice 2
 ----------
 
-classe voiture
+classe Voiture
  
    matricule : entier;
    modele : string;
@@ -9,8 +9,13 @@ classe voiture
    prix : réel;
    
 ****** variables ******   
-accelerer = false
-demarrer = false
+accelerer = booleen
+demarrer = booleen
+véhicule1 : voiture
+véhicule2 : voiture
+véhicule3 : voiture
+véhicule4 : voiture
+véhicule5 : voiture
 
 ******* methode *******
 afficher()
@@ -22,30 +27,30 @@ afficher()
 
  debut pgm
  
- ford = voiture.matricule
- ford = voiture.modele
- ford = voiture.année
- ford = voiture.prix 
+voiture1.matricule <-- 10
+voiture1.modele <-- ford
+voiture1.année <-- 2000
+voiture1.prix <-- 5000
  
- peugeot = voiture.matricule
- peugeot = voiture.modele
- peugeot = voiture.année
- peugeot = voiture.prix
+voiture2.matricule <-- 12
+voiture2.modele <-- fiat
+voiture2.année <-- 2003
+voiture2.prix <-- 6300
  
- mercedes = voiture.matricule
- mercedes = voiture.modele
- mercedes = voiture.année
- mercedes = voiture.prix
+voiture3.matricule <-- 55
+voiture3.modele <-- mercedes
+voiture3.année <-- 2014
+voiture3.prix <-- 10222
  
- ferrari = voiture.matricule
- ferrari = voiture.modele
- ferrari = voiture.année
- ferrari = voiture.prix
+voiture.matricule <-- 66
+voiture.modele <-- ferrari
+voiture.année <-- 2012
+voiture.prix <-- 25988
  
- fiat = voiture.matricule
- fiat = voiture.modele
- fiat = voiture.année
- fiat = voiture.prix
+voiture.matricule <-- 32
+voiture.modele <-- puegeot
+voiture.année <-- 2015
+voiture.prix <-- 9855
   
   
   ford.afficher()
