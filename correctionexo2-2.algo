@@ -1,0 +1,72 @@
+Classe Voiture
+début
+	//attributs
+		matricule : entier
+		modele : chaine de caractère
+		annee : entier
+		prix : double
+		accelerer : booleen
+		demarrer : booleen
+		
+	// méthodes
+	méthode demarrer()
+	debut
+		si this.demarrer = false alors
+			Ecrire " le vehicule est démarré"
+			this.demarrer <-- true
+		fin si
+	fin méthode
+	
+	méthode accelerer()
+	debut
+		si demarrer = true alors
+			Ecrire " le vehicule accélère"
+			this.accelerer <-- true
+		fin si
+		sinon
+			this.accelerer <-- false
+		fin sinon
+	fin méthode
+	
+	méthode afficherInfos()
+	début
+	 Ecrire "Saisie de la voiture " & this.modele & " ......."
+	fin
+fin classe
+
+
+debut programme (void main())
+// déclaration des variables
+	variable
+		matricule : entier
+		tableau tabVoiture[5] : Voiture	
+		
+			
+			
+// initialisation des variables			
+	matricule <-- 0
+	
+	//instancier voiture comme nouvelle Voiture//* autre méthode *
+	
+	   pour i=0 à longeur de tabVoiure[]-1, i++
+			instancier tabVoiture[i] comme nouvelle Voiture
+			Ecrire "quel est le modele du véhicule ?"
+			lire tabVoiture[i].modele
+			Ecrire "quel est l'année du véhicule ?"
+			lire tabVoiture[i].annee
+			Ecrire "quel est le prix du véhicule ?"
+			lire tabVoiture[i].prix
+			matricule++
+			tabVoiture[i].matricule <-- matricule
+			tabVoiture[i].demarrer <--false
+			tabVoiture[i].accelerer <--false
+			appeler tabVoiture[i].demarrer() 
+			appeler tabVoiture[i].accelerer()
+		
+      fin pour
+
+	pour i=0 à longeur de tabVoiure[]
+		Voiture voiture <-- tabVoiure[i]
+		voiture.afficherInfos()
+	fin pour
+Fin programme
