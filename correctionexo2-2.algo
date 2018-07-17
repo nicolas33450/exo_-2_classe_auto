@@ -7,7 +7,7 @@ début
 		prix : double
 		accelerer : booleen
 		demarrer : booleen
-		
+---------------------------------------------------------------	
 	// méthodes
 	méthode demarrer()
 	debut
@@ -32,8 +32,18 @@ début
 	début
 	 Ecrire "Saisie de la voiture " & this.modele & " ......."
 	fin
-fin classe
+--------------------------------------------------------------	
+constructeur année()
+debut
+	voiture.année = 2018
+fin
 
+constructeur voiture(matricule, modele, prix, accelerer, demarrer)
+debut
+	
+fin
+fin classe
+************************************************************
 
 debut programme (void main())
 // déclaration des variables
@@ -46,7 +56,7 @@ debut programme (void main())
 // initialisation des variables			
 	matricule <-- 0
 	
-	//instancier voiture comme nouvelle Voiture//* autre méthode *
+	     //instancier voiture comme nouvelle Voiture//* autre méthode *
 	
 	   pour i=0 à longeur de tabVoiure[]-1, i++
 	   
