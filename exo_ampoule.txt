@@ -2,33 +2,31 @@ classe Lampe
 			 
 debut
     nom : string
-	allumé : booleen
 	ampoule : Ampoule
 fin
 ---------------------
 classe Ampoule
 debut
-    allumé : booleen
-	couleur : string
+     allumé : booleen
+	 couleur : string
 fin
 --------------------
 **** methodes ****
 
 allumer()
 debut
-   allumé = true
-   ampoule.allumer()
+      ampoule.allumer()
 fin
 -------------------
 éteindreteindre()
 debut
-   allumé = false
+      ampoule.éteindre()
 fin   
 ------------------
 changer(nouvelleampoule)
 debut
-   si (allumé = false) ou (éteindre = true) alors   
-   ampoule <-- nouvelleampoule
+     si (allumé = false) ou (éteindre = true) alors   
+     ampoule <-- nouvelleampoule
 fin
 ------------------  
 changerCouleur(nouvellecouleur)

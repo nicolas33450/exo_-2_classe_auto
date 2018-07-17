@@ -6,72 +6,93 @@ classe Voiture
    matricule : entier;
    modele : string;
    année : entier;
-   prix : réel;
-   
-****** variables ******   
-accelerer = booleen
-demarrer = booleen
-véhicule1 : voiture
-véhicule2 : voiture
-véhicule3 : voiture
-véhicule4 : voiture
-véhicule5 : voiture
+   prix : réel; 
+   acceleré = booleen
+   demarré = booleen
+
 
 ******* methode *******
 afficher()
-
-
-
+début
+     affiche = matricule + modele + année + prix
+fin
 ***********************
-
-
- debut pgm
- 
-voiture1.matricule <-- 10
-voiture1.modele <-- ford
-voiture1.année <-- 2000
-voiture1.prix <-- 5000
- 
-voiture2.matricule <-- 12
-voiture2.modele <-- fiat
-voiture2.année <-- 2003
-voiture2.prix <-- 6300
- 
-voiture3.matricule <-- 55
-voiture3.modele <-- mercedes
-voiture3.année <-- 2014
-voiture3.prix <-- 10222
- 
-voiture.matricule <-- 66
-voiture.modele <-- ferrari
-voiture.année <-- 2012
-voiture.prix <-- 25988
- 
-voiture.matricule <-- 32
-voiture.modele <-- puegeot
-voiture.année <-- 2015
-voiture.prix <-- 9855
-  
-  
-  ford.afficher()
-     	  
-	 
+démarrer() 
 debut
-	si demarrer = false alors
-		Ecrire " le vehicule est démarré"
-		demarrer <-- true
+	si demarré = false alors
+		demarré <-- true
 	fin si
 	retourner demarrer
 fin méthode
-
-oleen)
+***********************
+accélèrer()
 debut
-	si demarrer = true alors
-		Ecrire " le vehicule accélère"
-		accelerer <-- true
+	si demarré = true alors
+		acceleré <-- true
 	fin si
 	sinon
-		accelerer <-- false
+		acceleré <-- false
 	fin sinon
 	retourner accelerer
 fin méthode
+
+***********************
+debut pgm
+
+     tabvoiture[5] : Voiture
+	
+
+       pour i = 0 a 4 , i ++  
+        
+	        saisir modele voiture
+	        lire tabvoiture[i] = modele
+	  
+	        siasir année voiture
+	        lire tabvoiture[i] = année
+	  
+	        saisir prix voiture
+	        lire tabvoiture[i] = prix
+	  
+	        matricule ++
+			
+			tabvoiture[i].afficher()
+	  
+      fin pour
+      
+      pour i = 0 a 4 , i++
+	      
+		  si (tabvoiture[i].demarré = false) alors
+		  
+		       tabvoiture[i].demarrer()
+			   
+           fin si
+		   
+		   tabvoiture[i].accelerer()
+		   
+      fin pour	   
+fin pgm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

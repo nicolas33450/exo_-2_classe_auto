@@ -1,0 +1,52 @@
+classe Ampoule
+debut
+   allumé : booleen
+   couleur : string
+fin
+*** methode ***
+
+allumer()
+debut
+  allumé = true
+fin
+
+éteindre()
+début
+  allumé = false
+fin
+
+changerdecouleur(nouvellecouleur)
+début
+  si allumé = false alors
+     couleur <-- nouvellecouleur
+  fin si 
+fin
+*************************************************************
+classe Guirlande
+debut
+   ampoule [10] : Ampoule
+fin
+
+// methode //
+
+allumer()
+debut
+
+debut pgm
+
+// déclaration variable //
+
+ampoule1 : Ampoule
+ampoule2 : Ampoule
+
+
+ampoule1.couleur <-- "bleu"
+ampoule2.couleur <-- "rouge"
+ampoule1.allumer()
+ampoule2.allumer()
+ampoule1.changerdecouleur("jaune")
+ampoule2.éteindre()
+ampoule1.changerdecouleur("vert")
+ampoule2.changerdecouleur("violet")
+ampoule1.éteindre()
+ampoule2.allumer()  
