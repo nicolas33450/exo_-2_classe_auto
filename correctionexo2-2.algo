@@ -49,7 +49,9 @@ debut programme (void main())
 	//instancier voiture comme nouvelle Voiture//* autre méthode *
 	
 	   pour i=0 à longeur de tabVoiure[]-1, i++
+	   
 			instancier tabVoiture[i] comme nouvelle Voiture
+			
 			Ecrire "quel est le modele du véhicule ?"
 			lire tabVoiture[i].modele
 			Ecrire "quel est l'année du véhicule ?"

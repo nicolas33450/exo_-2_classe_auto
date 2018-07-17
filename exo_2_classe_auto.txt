@@ -14,24 +14,24 @@ classe Voiture
 ******* methode *******
 afficher()
 début
-     affiche = matricule + modele + année + prix
+     affiche = this.matricule + this.modele + this.année + this.prix
 fin
 ***********************
 démarrer() 
 debut
-	si demarré = false alors
-		demarré <-- true
+	si this.demarrer = false alors
+		this.demarrer <-- true
 	fin si
 	retourner demarrer
 fin méthode
 ***********************
 accélèrer()
 debut
-	si demarré = true alors
-		acceleré <-- true
+	si this.demarrer = true alors
+		this.accelerer <-- true
 	fin si
 	sinon
-		acceleré <-- false
+		this.accelerer <-- false
 	fin sinon
 	retourner accelerer
 fin méthode
@@ -40,14 +40,18 @@ fin méthode
 debut pgm
 
      tabvoiture[5] : Voiture
+	 matricule : entier
+	 voiture : Voiture
+	 
 	
 
        pour i = 0 a 4 , i ++  
         
+	    instancier tabvoiture[i] comme nouvelle Voiture	
 	        saisir modele voiture
 	        lire tabvoiture[i] = modele
 	  
-	        siasir année voiture
+	        saisir année voiture
 	        lire tabvoiture[i] = année
 	  
 	        saisir prix voiture
