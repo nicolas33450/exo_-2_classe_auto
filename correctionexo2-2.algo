@@ -35,12 +35,17 @@ début
 --------------------------------------------------------------	
 constructeur année()
 debut
-	voiture.année = 2018
+	this.année = 2018
 fin
-
-constructeur voiture(matricule, modele, prix, accelerer, demarrer)
+--------------------------
+constructeur voiture(matricule : entier, modele : string, prix : entier, accelerer : booleen, demarrer : booleen)
 debut
-	
+	matricule : entier
+		this.modele <-- matricule
+		this.annee <-- année
+		this.prix <-- prix
+		this.accelerer <-- accelerer
+		this.demarrer <-- demarrer
 fin
 fin classe
 ************************************************************
@@ -56,29 +61,25 @@ debut programme (void main())
 // initialisation des variables			
 	matricule <-- 0
 	
-	     //instancier voiture comme nouvelle Voiture//* autre méthode *
+	     
 	
-	   pour i=0 à longeur de tabVoiure[]-1, i++
-	   
-			instancier tabVoiture[i] comme nouvelle Voiture
-			
+	   pour i=0 à longeur de tabVoiure[]-1, i++   
+									
 			Ecrire "quel est le modele du véhicule ?"
-			lire tabVoiture[i].modele
+			lire modele
 			Ecrire "quel est l'année du véhicule ?"
-			lire tabVoiture[i].annee
+			lire annee
 			Ecrire "quel est le prix du véhicule ?"
-			lire tabVoiture[i].prix
+			lire prix
 			matricule++
-			tabVoiture[i].matricule <-- matricule
-			tabVoiture[i].demarrer <--false
-			tabVoiture[i].accelerer <--false
-			appeler tabVoiture[i].demarrer() 
-			appeler tabVoiture[i].accelerer()
+			tabVoiture[i] <-- new Voiture (matricule,modele,année,prix,false,false)
+			
 		
       fin pour
 
-	pour i=0 à longeur de tabVoiure[]
-		Voiture voiture <-- tabVoiure[i]
+	pour i=0 à longeur de tabVoiture[]
+		voiture : Voiture
+		voiture <-- tabVoiture[i]
 		voiture.afficherInfos()
 	fin pour
 Fin programme
